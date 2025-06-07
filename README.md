@@ -1,3 +1,3 @@
-# Portfolio
+# Website
 
-- [portfolio.muhammad-sulaiman.com](https://portfolio.muhammad-sulaiman.com/)
+- [muhammad-sulaiman.com](https://muhammad-sulaiman.com/)
