@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f2e25dd-f676-4e26-b1cc-294361308826" name="Changes" comment="submodule removed" />
+    <list default="true" id="9f2e25dd-f676-4e26-b1cc-294361308826" name="Changes" comment="hugo build done">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sulaiman-equivator-dev"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/MuhammadSulaiman001/portfolio",
@@ -45,6 +56,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\my-github\portfolio\themes" />
+      <recent name="D:\code\my-github\portfolio\themes\coming-soon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\my-github\portfolio" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -59,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749326444747</updated>
-      <workItem from="1749326445966" duration="459000" />
+      <workItem from="1749326445966" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="keep only the site!">
       <option name="closed" value="true" />
@@ -77,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749326897310</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hugo build done">
+      <option name="closed" value="true" />
+      <created>1749326951275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749326951275</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="keep only the site!" />
     <MESSAGE value="submodule removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="submodule removed" />
+    <MESSAGE value="hugo build done" />
+    <option name="LAST_COMMIT_MESSAGE" value="hugo build done" />
   </component>
 </project>
