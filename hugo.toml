@@ -1,0 +1,20 @@
+baseURL = 'https://portfolio.muhammad-sulaiman.com/'
+languageCode = 'en-us'
+title = 'My portfolio'
+theme = 'coming-soon'
+
+[params]
+    title = "Muhammad Sulaiman" 
+    description = "My portfolio"
+    favicon = ""
+    message = "COMING SOON!" 
+    release = "November 1, 2025"
+    background = "" 
+
+socialIcons = [
+    {name = "email", url = "muhammad.b.sulaiman001@gmail.com"},      
+    {name = "twitter", url = "https://x.com/m_sulaiman001"},    
+    {name = "facebook", url = "https://www.facebook.com/profile.php?id=100004540865357"},    
+    {name = "github", url = "https://github.com/MuhammadSulaiman001"},    
+    {name = "linkedin", url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/"},    
+]
