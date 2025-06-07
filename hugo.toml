@@ -18,3 +18,7 @@ socialIcons = [
     {name = "github", url = "https://github.com/MuhammadSulaiman001"},    
     {name = "linkedin", url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/"},    
 ]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
