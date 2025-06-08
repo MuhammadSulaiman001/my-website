@@ -44,7 +44,7 @@
                     {{ $iconName := .name }}
                     <a href="{{ if eq $iconName "email" }}mailto:{{ .url }} {{ else }}{{ .url }}{{ end }}"
                        {{ if .rel }}rel="{{ .rel }}"{{ end }}>
-                        <img src="{{ $.Site.BaseURL }}/svg/icons/{{ .name }}.svg" alt="test" />
+                        <img src="{{ $.Site.BaseURL }}svg/icons/{{ .name }}.svg" alt="test" />
                     </a>
                 </li>
                 {{ end }}
