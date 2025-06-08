@@ -1,11 +1,11 @@
-baseURL = 'https://portfolio.muhammad-sulaiman.com/'
+baseURL = 'https://muhammad-sulaiman.com/'
 languageCode = 'en-us'
-title = 'My portfolio'
+title = 'My website'
 theme = 'coming-soon'
 
 [params]
     title = "Muhammad Sulaiman" 
-    description = "My portfolio"
+    description = "My website"
     favicon = ""
     message = "COMING SOON!" 
     release = "November 1, 2025"
