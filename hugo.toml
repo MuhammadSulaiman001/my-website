@@ -13,9 +13,10 @@ publishDir = 'docs'
     background = "" 
 
 socialIcons = [
-    {name = "email", url = "muhammad.b.sulaiman001@gmail.com"},      
-    {name = "twitter", url = "https://x.com/m_sulaiman001"},    
-    {name = "facebook", url = "https://www.facebook.com/profile.php?id=100004540865357"},    
-    {name = "github", url = "https://github.com/MuhammadSulaiman001"},    
-    {name = "linkedin", url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/"},    
+    {name = "stackoverflow", url = "https://stackoverflow.com/users/4108016/muhammad-sulaiman"},
+    {name = "twitter", url = "https://x.com/m_sulaiman001"},
+    {name = "facebook", url = "https://www.facebook.com/profile.php?id=100004540865357"},
+    {name = "github", url = "https://github.com/MuhammadSulaiman001"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6"},
+    {name = "email", url = "muhammad.b.sulaiman001@gmail.com"},
 ]
