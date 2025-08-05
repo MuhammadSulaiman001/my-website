@@ -1,22 +1,121 @@
-baseURL = 'https://muhammad-sulaiman.com'
-languageCode = 'en-us'
-title = 'My website'
-theme = 'coming-soon'
-publishDir = 'docs'
+baseURL = "https://muhammad-sulaiman.com"
+languageCode = "en-us"
+title = "Muhammad Sulaiman"
+theme = "careercanvas"
+publishDir = "docs"
+
+[build]
+writeStats = true
 
 [params]
-    title = "Muhammad Sulaiman" 
-    description = "My website"
-    favicon = ""
-    message = "COMING SOON!"
-    release = "November 1, 2025"
-    background = "" 
+name = "Muhammad Sulaiman"
+tagline = "Project Manager, Software Engineer."
+location = "Damascus, Syria"
+email = "muhammad.b.sulaiman@gmail.com"
+profile_image = "/images/muhammad-sulaiman-image.jpg"
+# Project manager, software architect, programmer, master's degree in AI/NLP & open source enthusiast.\nHusband & Father of two, passionate about building intelligent solutions for complex engineering problems
+description = "32 Year old Muslim 👳🏻 Husband 🤵, Father of 2 👧🏻👦🏻. Religion first, family second.. sport, science and code = a way of life."
+author = "Mo Sulaiman"
 
-socialIcons = [
-    {name = "stackoverflow", url = "https://stackoverflow.com/users/4108016/muhammad-sulaiman"},
-    {name = "twitter", url = "https://x.com/m_sulaiman001"},
-    {name = "facebook", url = "https://www.facebook.com/profile.php?id=100004540865357"},
-    {name = "github", url = "https://github.com/MuhammadSulaiman001"},
-    {name = "linkedin", url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6"},
-    {name = "email", url = "muhammad.b.sulaiman001@gmail.com"},
+og_image = "images/muhammad-sulaiman-image.jpg"
+
+hero_description = "Technical project manager and software developer with 7+ years in the IT industry. Bachelor’s degree in Computer Science and Master’s degree in AI/NLP. Experienced software architect and tech lead, open source enthusiast, curious mind, and lifelong learner who turns ideas into working code."
+hero_location = "Damascus, Syria"
+
+linkedin_url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6"
+linkedin_text = "linkedin.com/in/muhammad-sulaiman-b3723ba6"
+github_url = "https://github.com/MuhammadSulaiman001"
+github_text = "github.com/MuhammadSulaiman001"
+
+copyright = "© 2025 | Muhammad Sulaiman"
+
+collab_tags = [
+    "Technical Project Management",
+    "Software Architecture",
+    "Team leadership",
+    "AI/NLP Solutions",
+    "Technical Consulting",
+    ".NET Development",
+    "Desktop & Mobile Applications",
+    "Web Applications",
 ]
+
+resume_url_en = "/files/sulaiman-resume.pdf"
+resume_label = "View CV"
+
+formspree_endpoint = "https://formspree.io/f/mzzvjzee" # Change to your Formspree endpoint - DONE
+
+[[params.social]]
+icon = "linkedin-in"
+url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/"
+
+[[params.social]]
+icon = "github"
+url = "https://github.com/MuhammadSulaiman001"
+
+sectionPagesMenu = 'main'
+
+[[menu.main]]
+name = "Experience"
+url = "/#experience"
+weight = 4
+
+[[menu.main]]
+name = "About"
+url = "/#about"
+weight = 2
+
+[[menu.main]]
+name = "Skills"
+url = "/#skills"
+weight = 3
+
+[[menu.main]]
+name = "Experience"
+url = "/#experience"
+weight = 4
+
+[[menu.main]]
+name = "Contact"
+url = "/#contact"
+weight = 5
+
+# TODO restore
+#[[menu.main]]
+#name = "Blog"
+#url = "/blog/"
+#weight = 60
+
+[[menu.main]]
+name = "Technical Skills"
+url = "/#technical"
+weight = 4.5
+
+[taxonomies]
+tag = "tags"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "monokai"
+
+[server]
+[[server.headers]]
+for = "/**/*.css"
+[server.headers.values]
+Content-Type = "text/css"
+
+# TODO: restore?
+#[menu]
+#  [[menu.main]]
+#    name = "Structural Engineering"
+#    url = "/engineering/"
+#    weight = 50
+#    pre = "engineering"
+#  [[menu.main]]
+#    name = "Contributions"
+#    url = "/contributions/"
+#    weight = 51
+#    pre = "contributions"

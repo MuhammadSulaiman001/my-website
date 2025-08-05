@@ -1,0 +1,60 @@
+{{ define "main" }}
+<section class="py-16 bg-white dark:bg-gray-800">
+  <div class="w-full lg:w-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-8 font-heading text-center text-gray-900 dark:text-white">{{ .Title }}</h1>
+    
+    {{ if .Params.intro }}
+    <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mb-12">
+      {{ .Params.intro | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.study }}
+    <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mb-12">
+      {{ .Params.study | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.passion_title }}
+    <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ .Params.passion_title }}</h2>
+    <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mb-12">
+      {{ .Params.passion_text | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.mix }}
+    <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mb-12">
+      {{ .Params.mix | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.personal }}
+    <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mb-12">
+      {{ .Params.personal | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.quickfacts }}
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-12">
+      {{ range .Params.quickfacts }}
+      <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-sm">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-{{ .icon }} text-blue-600 dark:text-blue-400 text-xl mr-3"></i>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ .title }}</h3>
+        </div>
+        <div class="text-gray-600 dark:text-gray-300 prose dark:prose-invert">
+          {{ .value | markdownify }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Content }}
+    <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mt-12">
+      {{ .Content }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }} 
