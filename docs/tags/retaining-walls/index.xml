@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Retaining-Walls on Muhammad Sulaiman</title><link>https://muhammad-sulaiman.com/tags/retaining-walls/</link><description>Recent content in Retaining-Walls on Muhammad Sulaiman</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://muhammad-sulaiman.com/tags/retaining-walls/index.xml" rel="self" type="application/rss+xml"/><item><title>Retaining Walls Designer</title><link>https://muhammad-sulaiman.com/engineering/retaining_walls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://muhammad-sulaiman.com/engineering/retaining_walls/</guid><description>&lt;h2 id="welcome-">Welcome! 👋&lt;/h2>
+&lt;p>During my early days in structural engineering, I developed a Cantilever Concrete Retaining Wall Designer to assist with the design and analysis of retaining walls using Python. Today, I&amp;rsquo;m excited to present its modern version as a web application, powered by Streamlit.&lt;/p>
+
+
+
+
+
+&lt;div class="my-8">
+ 
+ &lt;a href="https://retaining-wall.streamlit.app/" target="_blank" class="block">
+ &lt;img 
+ src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" 
+ alt="Streamlit App" 
+ width="200"
+ height="auto"
+ class="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+ loading="lazy"
+ >
+ &lt;/a>
+ 
+ 
+&lt;/div> 
+&lt;p>&lt;strong>Software developed to streamline the design and detailing process of retaining walls. The program allows:&lt;/strong>&lt;/p>
+&lt;h2 id="features-">Features 🚀&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Define the parameters&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Define the dimensions&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Design the reinforcement (moment)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Visualization&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="demo-video">Demo video&lt;/h2>
+
+
+&lt;div class="relative">
+ &lt;div class="aspect-video">
+ &lt;iframe
+ id="iframe-demo-video"
+ src="https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141"
+ class="w-full h-full"
+ style="border: none;"
+ allowfullscreen
+ loading="lazy">
+ &lt;/iframe>
+ &lt;/div>
+ &lt;button
+ class="absolute top-2 right-2 bg-white/80 text-gray-800 text-sm px-2 py-1 rounded shadow hover:bg-white"
+ onclick="document.getElementById('iframe-demo-video').requestFullscreen();">
+ ⛶ Fullscreen
+ &lt;/button>
+ &lt;/div>
+
+ 
+&lt;h2 id="test-the-app">Test the App&lt;/h2>
+
+
+&lt;div class="relative">
+ &lt;div class="aspect-video">
+ &lt;iframe
+ id="iframe-test-app"
+ src="https://retaining-wall.streamlit.app?embed=true&amp;amp;embed_options=show_footer"
+ class="w-full h-full"
+ style="border: none;"
+ allowfullscreen
+ loading="lazy">
+ &lt;/iframe>
+ &lt;/div>
+ &lt;button
+ class="absolute top-2 right-2 bg-white/80 text-gray-800 text-sm px-2 py-1 rounded shadow hover:bg-white"
+ onclick="document.getElementById('iframe-test-app').requestFullscreen();">
+ ⛶ Fullscreen
+ &lt;/button>
+ &lt;/div>
+
+ 
+&lt;h2 id="installation-">Installation 🖥️&lt;/h2>
+&lt;p>To run the &lt;strong>app&lt;/strong> locally:&lt;/p></description></item></channel></rss>
