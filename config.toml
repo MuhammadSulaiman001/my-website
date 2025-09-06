@@ -3,13 +3,34 @@ languageCode = "en-us"
 title = "Muhammad Sulaiman"
 theme = "careercanvas"
 publishDir = "docs"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+    [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+        tagline = "Project Manager, Software Engineer."
+        hero_description = "Technical project manager and software developer with 7+ years in the IT industry. Bachelor’s degree in Computer Science and Master’s degree in AI/NLP. Experienced software architect and tech lead, open source enthusiast, curious mind, and lifelong learner who turns ideas into working code."
+        hero_location = "Damascus, Syria"
+        collab_tags = [
+            "Technical Project Management",
+            "Software Architecture",
+            "Team leadership",
+            "AI/NLP Solutions",
+            "Technical Consulting",
+            ".NET Development",
+            "Desktop & Mobile Applications",
+            "Web Applications",
+        ]
 
 [build]
 writeStats = true
 
 [params]
 name = "Muhammad Sulaiman"
-tagline = "Project Manager, Software Engineer."
 location = "Damascus, Syria"
 email = "muhammad.b.sulaiman@gmail.com"
 profile_image = "/images/muhammad-sulaiman-image.jpg"
@@ -19,26 +40,12 @@ author = "Mo Sulaiman"
 
 og_image = "images/muhammad-sulaiman-image.jpg"
 
-hero_description = "Technical project manager and software developer with 7+ years in the IT industry. Bachelor’s degree in Computer Science and Master’s degree in AI/NLP. Experienced software architect and tech lead, open source enthusiast, curious mind, and lifelong learner who turns ideas into working code."
-hero_location = "Damascus, Syria"
-
 linkedin_url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6"
 linkedin_text = "linkedin.com/in/muhammad-sulaiman-b3723ba6"
 github_url = "https://github.com/MuhammadSulaiman001"
 github_text = "github.com/MuhammadSulaiman001"
 
 copyright = "© 2025 | Muhammad Sulaiman"
-
-collab_tags = [
-    "Technical Project Management",
-    "Software Architecture",
-    "Team leadership",
-    "AI/NLP Solutions",
-    "Technical Consulting",
-    ".NET Development",
-    "Desktop & Mobile Applications",
-    "Web Applications",
-]
 
 resume_url_en = "/files/sulaiman-resume.pdf"
 resume_label = "View CV"
@@ -55,44 +62,9 @@ url = "https://github.com/MuhammadSulaiman001"
 
 sectionPagesMenu = 'main'
 
-[[menu.main]]
-name = "Experience"
-url = "/#experience"
-weight = 4
-
-[[menu.main]]
-name = "About"
-url = "/#about"
-weight = 2
-
-[[menu.main]]
-name = "Skills"
-url = "/#skills"
-weight = 3
-
-[[menu.main]]
-name = "Experience"
-url = "/#experience"
-weight = 4
-
-[[menu.main]]
-name = "Contact"
-url = "/#contact"
-weight = 5
-
-# TODO restore
-#[[menu.main]]
-#name = "Blog"
-#url = "/blog/"
-#weight = 60
-
-[[menu.main]]
-name = "Technical Skills"
-url = "/#technical"
-weight = 4.5
-
 [taxonomies]
 tag = "tags"
+
 
 [markup]
 [markup.goldmark]
@@ -107,15 +79,12 @@ for = "/**/*.css"
 [server.headers.values]
 Content-Type = "text/css"
 
-# TODO: restore?
-#[menu]
-#  [[menu.main]]
-#    name = "Structural Engineering"
-#    url = "/engineering/"
-#    weight = 50
-#    pre = "engineering"
-#  [[menu.main]]
-#    name = "Contributions"
-#    url = "/contributions/"
-#    weight = 51
-#    pre = "contributions"
+
+# Branding Configuration - Savannah King
+[params.colors]
+# main_color   = "#A97142"  # Lion Brown, warm and dominant
+# second_color = "#2E2E2E"  # Dark Charcoal, authority
+# third_color  = "#E6B325"  # Golden Mane, majesty and power
+main_color   = "#095BB0"  # Slightly Darker LinkedIn Blue, professional and trustworthy
+second_color = "#004182"  # Darker Blue, for depth and sophistication
+third_color  = "#8C8C8C"  # Neutral Gray, for balance and modernity
