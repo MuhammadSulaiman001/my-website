@@ -23,20 +23,3 @@ name = "Tech Stack"
 url = "/#technical"
 weight = 4.5
 
-#[[main]]
-#name = "Blog"
-#pageRef = "/blog"
-#weight = 60
-#
-#[[main]]
-#name = "Engineering"
-#pageRef = "/engineering"
-#weight = 50
-#pre = "engineering"
-#
-#[[main]]
-#name = "Contributions"
-#pageRef = "/contributions"
-#weight = 51
-#pre = "contributions"
-

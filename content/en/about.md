@@ -32,8 +32,16 @@ quickfacts:
     value: "Published 2 conference papers in Multiple Choice Questions Generation from knowledge graphs.🎉"
   - icon: "language"
     title: "Languages"
-    value: "**English** (Full Professional), **Arabic** (Native)."
+    value: |
+      - English (Full Professional)
+      - Arabic (Native)
   - icon: "heart"
     title: "Interests"
-    value: " ⚽ **football**♟️ **Chess**, 💪 **weightlifting**, 🏊‍♂️ **Swimming**<br> 📚 **Reading**"
+    value: |
+      - ⚽ football
+      - ♟️ Chess
+      - 🏊‍♂️ Swimming
+      - 📚 Reading
+      - 💪 Weightlifting
+
 ---

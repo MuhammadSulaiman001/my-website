@@ -44,6 +44,7 @@ linkedin_url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6"
 linkedin_text = "linkedin.com/in/muhammad-sulaiman-b3723ba6"
 github_url = "https://github.com/MuhammadSulaiman001"
 github_text = "github.com/MuhammadSulaiman001"
+stackoverflow_url = "https://stackoverflow.com/users/4108016/muhammad-sulaiman"
 
 copyright = "© 2025 | Muhammad Sulaiman"
 
@@ -59,6 +60,24 @@ url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/"
 [[params.social]]
 icon = "github"
 url = "https://github.com/MuhammadSulaiman001"
+
+[[params.social]]
+icon = "stack-overflow"
+url = "https://stackoverflow.com/users/4108016/muhammad-sulaiman"
+
+[[params.social]]
+icon = "facebook"
+url = "https://www.facebook.com/profile.php?id=100004540865357"
+
+[[params.social]]
+icon = "youtube"
+url = "https://www.youtube.com/@muhammadsulaiman8616"
+
+[[params.social]]
+icon = "twitter"
+url = "https://x.com/m_sulaiman001"
+
+
 
 sectionPagesMenu = 'main'
 
@@ -82,9 +101,18 @@ Content-Type = "text/css"
 
 # Branding Configuration - Savannah King
 [params.colors]
+# main_color   = "#095BB0"  # Slightly Darker LinkedIn Blue, professional and trustworthy
+# second_color = "#004182"  # Darker Blue, for depth and sophistication
+# third_color  = "#8C8C8C"  # Neutral Gray, for balance and modernity
 # main_color   = "#A97142"  # Lion Brown, warm and dominant
 # second_color = "#2E2E2E"  # Dark Charcoal, authority
 # third_color  = "#E6B325"  # Golden Mane, majesty and power
-main_color   = "#095BB0"  # Slightly Darker LinkedIn Blue, professional and trustworthy
-second_color = "#004182"  # Darker Blue, for depth and sophistication
-third_color  = "#8C8C8C"  # Neutral Gray, for balance and modernity
+# main_color   = "#0A66C2"  # LinkedIn Blue, trustworthy and modern
+# second_color = "#7FB3E4"  # Sky Blue, softer accent
+# third_color  = "#F4F6F8"  # Cloud White, clean and minimal
+# main_color   = "#457B9D"  # Muted Blue, strong enough for text and UI
+# second_color = "#A8DADC"  # Aqua Pastel, calm and balanced
+# third_color  = "#F1FAEE"  # Soft White, clean and light
+# main_color   = "#FF1E1E"  # Bright Red, high impact and dynamic
+# second_color = "#1C1F26"  # Graphite Black, strength and reliability
+# third_color  = "#F2F6FA"  # Cloud White, modern and clean
