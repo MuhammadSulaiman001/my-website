@@ -2,7 +2,7 @@ baseURL = "https://muhammad-sulaiman.com"
 languageCode = "en-us"
 title = "Muhammad Sulaiman"
 theme = "careercanvas"
-#publishDir = "docs"
+publishDir = "docs"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
