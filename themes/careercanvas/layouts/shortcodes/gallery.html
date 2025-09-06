@@ -12,8 +12,8 @@
     {{ end }}
   </div>
 {{ else }}
-  <div class="text-gray-500 italic">
-    Gallery images not found in {{ $dir }}
+  <div class="text-text-muted italic">
+    {{ i18n "galleryNotFound" }} {{ $dir }}
   </div>
 {{ end }}
   

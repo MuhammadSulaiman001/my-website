@@ -1,62 +1,46 @@
 <!-- Technical Skills Section -->
-<section id="technical" class="py-16 bg-gray-50 dark:bg-gray-900">
+<section id="technical" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {{ with .Site.GetPage "technical" }}
       <!-- Section heading -->
-      <h2 class="text-3xl font-bold text-center mb-4 font-heading text-gray-900 dark:text-white">{{ .Title }}</h2>
-      <p class="text-lg text-center mb-12 text-gray-600 dark:text-gray-400 italic">{{ .Params.intro }}</p>
+      <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h2>
+      <p class="text-lg text-center mb-12 text-gray-700 dark:text-text-tertiary italic">{{ .Params.intro }}</p>
 
       <!-- Technical skills groups in cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {{ range $i, $group := .Params.technical_groups }}
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 project-card opacity-0 border border-gray-200 dark:border-gray-700"
-             data-animate data-animate-delay="{{ mul $i 100 }}">
+        {{ $isAdvanced := or (in $group.title "Advanced") (in $group.title "Expert") (in $group.title "Specialized") }}
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary tech-skill-card card-hover"
+             data-animate>
           <div class="project-inner">
-            <!-- Card header with icon and title -->
-            <div class="flex items-center mb-4">
-              <div class="bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                {{ if eq $group.title "Programming Languages" }}
-                <i class="fas fa-code text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "Web Fundamentals" }}
-                <i class="fas fa-globe text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "Query Languages" }}
-                <i class="fas fa-database text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "Web & UI" }}
-                <i class="fas fa-palette text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "Data Science" }}
-                <i class="fas fa-chart-line text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "AI/ML Frameworks" }}
-                <i class="fas fa-brain text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "Development Tools" }}
-                <i class="fas fa-tools text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else if eq $group.title "Engineering Software" }}
-                <i class="fas fa-building text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ else }}
-                <i class="fas fa-cog text-blue-600 dark:text-blue-300 text-xl" aria-hidden="true"></i>
-                {{ end }}
-              </div>
-              <h3 class="text-xl font-heading font-semibold text-gray-900 dark:text-white">{{ $group.title }}</h3>
+            <!-- Card header with title only -->
+            <div class="mb-4 text-center">
+              <h3 class="text-xl font-heading font-semibold text-text-primary dark:text-text-primary">{{ $group.title }}</h3>
             </div>
             
-            <!-- Skills flex layout -->
-            <div class="flex flex-wrap gap-2">
+            <!-- Skills flex layout with icons and text below -->
+            <div class="flex flex-wrap gap-6 justify-center">
               {{ range $group.skills }}
-              <span class="skill-pill px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-md flex items-center gap-2 text-sm border {{ if in (slice "python" "js" "html5" "css3-alt" "linux" "docker" "github" "gitlab" "typescript") .icon }}blue-gradient text-blue-800 dark:text-blue-200{{ else if in (slice "database" "server" "code-branch" "code" "laptop-code" "elephant" "leaf" "fire" "cloud") .icon }}green-gradient text-green-800 dark:text-green-200{{ else if in (slice "bolt" "atom" "forward" "cube" "chart-line" "chart-bar" "window-maximize" "window-restore") .icon }}purple-gradient text-purple-800 dark:text-purple-200{{ else if in (slice "square-root-alt" "table-cells" "map" "network-wired" "layer-group" "microchip" "eye") .icon }}orange-gradient text-orange-800 dark:text-orange-200{{ else if in (slice "building" "draw-polygon") .icon }}red-gradient text-red-800 dark:text-red-200{{ else }}blue-gradient text-blue-800 dark:text-blue-200{{ end }}">
-                {{ if in (slice "python" "js" "html5" "css3-alt" "linux" "docker" "github" "gitlab" "typescript") .icon }}
-                <i class="fab fa-{{ .icon }} text-blue-600 dark:text-blue-300 text-base" aria-hidden="true"></i>
-                {{ else if in (slice "database" "server" "code-branch" "code" "laptop-code" "elephant" "leaf" "fire" "cloud") .icon }}
-                <i class="fas fa-{{ .icon }} text-green-600 dark:text-green-400 text-base" aria-hidden="true"></i>
-                {{ else if in (slice "bolt" "atom" "forward" "cube" "chart-line" "chart-bar" "window-maximize" "window-restore") .icon }}
-                <i class="fas fa-{{ .icon }} text-purple-600 dark:text-purple-400 text-base" aria-hidden="true"></i>
-                {{ else if in (slice "square-root-alt" "table-cells" "map" "network-wired" "layer-group" "microchip" "eye") .icon }}
-                <i class="fas fa-{{ .icon }} text-orange-600 dark:text-orange-400 text-base" aria-hidden="true"></i>
-                {{ else if in (slice "building" "draw-polygon") .icon }}
-                <i class="fas fa-{{ .icon }} text-red-600 dark:text-red-400 text-base" aria-hidden="true"></i>
+              <div class="flex flex-col items-center text-center">
+                {{ if .devicon_name }}
+                  <!-- Use explicit devicon_name if provided -->
+                  <div class="h-14 flex items-center justify-center mb-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{ .devicon_name }}/{{ .devicon_name }}-original.svg" 
+                         alt="{{ .name }}" 
+                         width="56" 
+                         height="56" 
+                         data-animation="skill-icon" />
+                  </div>
                 {{ else }}
-                <i class="fas fa-{{ .icon }} text-blue-600 dark:text-blue-300 text-base" aria-hidden="true"></i>
+                  <!-- Fallback to FontAwesome with random colors -->
+                  {{ $colors := slice "text-blue-500" "text-green-500" "text-purple-500" "text-red-500" "text-yellow-500" "text-indigo-500" "text-pink-500" "text-teal-500" "text-orange-500" "text-cyan-500" }}
+                  {{ $randomColor := index $colors (mod (add (mul (len $colors) 7) (len .name)) (len $colors)) }}
+                  <div class="h-14 flex items-center justify-center mb-2">
+                    <i class="fas fa-{{ .icon }} text-5xl {{ $randomColor }}" data-animation="skill-icon" aria-hidden="true"></i>
+                  </div>
                 {{ end }}
-                <span>{{ .name }}</span>
-              </span>
+                <span class="text-sm font-semibold text-text-secondary dark:text-text-secondary">{{ .name }}</span>
+              </div>
               {{ end }}
             </div>
           </div>
