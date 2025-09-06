@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios | Muhammad Sulaiman
+  
+</title>
+
+
+<meta name="description" content="A comprehensive guide to CareerCanvas, a modern Hugo theme designed for technical professionals. Learn about its features, installation, and how it can help showcase your professional portfolio." />
+<meta name="author" content="Mo Sulaiman" />
+<link rel="canonical" href="http://localhost:1313/blog/careercanvas-hugo-theme/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios | Muhammad Sulaiman" />
+<meta property="og:description" content="A comprehensive guide to CareerCanvas, a modern Hugo theme designed for technical professionals. Learn about its features, installation, and how it can help showcase your professional portfolio." />
+<meta property="og:url" content="http://localhost:1313/blog/careercanvas-hugo-theme/" />
+<meta property="og:image" content="http://localhost:1313/images/muhammad-sulaiman-image.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Muhammad Sulaiman" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios | Muhammad Sulaiman" />
+<meta name="twitter:description" content="A comprehensive guide to CareerCanvas, a modern Hugo theme designed for technical professionals. Learn about its features, installation, and how it can help showcase your professional portfolio." />
+<meta name="twitter:image" content="http://localhost:1313/images/muhammad-sulaiman-image.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    
+    
+    <style>
+ 
+:root {
+   
+  --color-primary: #0A66C2;
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second: #0D0D1A;
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third: #7FB3E4;
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: var(--color-white);
+  --color-bg-secondary: var(--color-gray-100);
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-border: var(--color-gray-300);
+}
+
+ 
+.dark {
+  --color-bg: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-bg-secondary: color-mix(in srgb, var(--color-primary) 30%, black);
+  --color-bg-tertiary: color-mix(in srgb, var(--color-primary) 40%, black);
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-300);
+  --color-border: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-400);
+  --color-border-secondary: var(--color-gray-600);
+}
+</style>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.css?v=1757159722" data-version="1757159722">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Muhammad Sulaiman</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-8">
+        
+          
+                      
+            
+            <a href="/#about" class="nav-link text-text-primary dark:text-text-primary">About</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#skills" class="nav-link text-text-primary dark:text-text-primary">Skills</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#experience" class="nav-link text-text-primary dark:text-text-primary">Experience</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#technical" class="nav-link text-text-primary dark:text-text-primary">Tech Stack</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#contact" class="nav-link text-text-primary dark:text-text-primary">Contact</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/engineering/" class="nav-link text-text-primary dark:text-text-primary">Engineering</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/contributions/" class="nav-link text-text-primary dark:text-text-primary">Contributions</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/blog/" class="nav-link text-text-primary dark:text-text-primary">Blog</a>
+          
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="relative group">
+          <a href="#" class="nav-link text-text-primary dark:text-text-primary flex items-center" aria-label="Language switcher">
+            <span class="text-lg mr-1">🇬🇧</span>
+            <i class="fas fa-chevron-down ml-1 text-sm"></i>
+          </a>
+          <div class="submenu absolute right-0 top-full mt-2 bg-bg dark:bg-bg shadow-lg rounded-lg z-50 min-w-[8rem] opacity-0 invisible">
+            
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="/fr/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary ">
+                  <span class="mr-2">🇫🇷</span>
+                </a>
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary font-semibold">
+                  <span class="mr-2">🇬🇧</span>
+                </a>
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="/es/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary ">
+                  <span class="mr-2">🇨🇱</span>
+                </a>
+              
+            
+          </div>
+        </div>
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          <a href="https://github.com/MuhammadSulaiman001" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          
+        </div>
+        
+        <button id="darkModeToggle" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button id="darkModeToggleMobile" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+        
+          
+          <a href="/#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            About
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Skills
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Experience
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#technical" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Tech Stack
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contact
+          </a>
+        
+        
+      
+        
+          
+          <a href="/engineering/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Engineering
+          </a>
+        
+        
+      
+        
+          
+          <a href="/contributions/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contributions
+          </a>
+        
+        
+      
+        
+          
+          <a href="/blog/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Blog
+          </a>
+        
+        
+      
+      
+      
+      
+      <div class="px-3 py-2 border-t border-border-primary dark:border-border-primary">
+        <div class="flex items-center space-x-3">
+          
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <a href="/fr/" class="px-2 py-1 text-xl opacity-70 hover:opacity-100" aria-label="Switch to  (go to home)">
+                <span aria-hidden="true">🇫🇷</span>
+              </a>
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <a href="/" class="px-2 py-1 text-xl opacity-100 font-semibold" aria-label="Switch to  (go to home)">
+                <span aria-hidden="true">🇬🇧</span>
+              </a>
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <a href="/es/" class="px-2 py-1 text-xl opacity-70 hover:opacity-100" aria-label="Switch to  (go to home)">
+                <span aria-hidden="true">🇨🇱</span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation="social">
+        <a href="https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/MuhammadSulaiman001" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Navigation script loaded');
+      
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/';
+      
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+          
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+          
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+      
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+      
+      
+      handleHashScroll();
+      
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+      
+      
+      window.addEventListener('hashchange', function() {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+      
+      
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+    
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
+
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+
+  </script>
+</nav>
+
+
+
+
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+<section class="py-28 bg-white dark:bg-gray-800">
+  <div class="w-full lg:w-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <div class="lg:w-3/4">
+        <h1 class="text-4xl font-bold mb-2 font-heading text-center text-gray-900 dark:text-white">Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios</h1>
+        
+        <div class="text-center text-gray-600 dark:text-gray-400 mb-8">
+          <time datetime="2025-05-18">May 18, 2025</time>
+        </div>
+        
+        <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
+          <p>I&rsquo;m excited to announce the release of CareerCanvas, a modern and responsive Hugo theme designed specifically for technical professionals and engineers. This theme aims to provide a clean, elegant way to showcase your professional experience, skills, and projects.</p>
+<p><img src="/images/personal_web_demo.png" alt="CareerCanvas Theme Preview">
+<em>CareerCanvas in action - A clean, modern interface for technical portfolios</em></p>
+<h2 id="key-features">Key Features</h2>
+<p>CareerCanvas comes packed with features that make it perfect for technical portfolios:</p>
+<ul>
+<li><strong>Modern Design</strong>: A clean, responsive layout that works beautifully on all devices</li>
+<li><strong>Dark Mode Support</strong>: Built-in dark mode for comfortable viewing in any lighting condition</li>
+<li><strong>Portfolio Showcase</strong>: Dedicated sections for projects with image galleries</li>
+<li><strong>Blog Support</strong>: Integrated blog functionality for sharing your thoughts and experiences</li>
+<li><strong>Skills Section</strong>: Interactive cards to highlight your technical expertise</li>
+<li><strong>Experience Timeline</strong>: A visually appealing way to present your professional journey</li>
+<li><strong>Contact Form</strong>: Easy way for potential employers or collaborators to reach out</li>
+<li><strong>Social Media Integration</strong>: Seamless connection with your professional networks</li>
+<li><strong>Multilingual Support</strong>: Currently supports English and French</li>
+<li><strong>Resume/CV Integration</strong>: Direct links to downloadable resumes</li>
+<li><strong>Tailwind CSS</strong>: Modern styling with utility-first CSS framework</li>
+</ul>
+<h2 id="technical-stack">Technical Stack</h2>
+<p>The theme is built with modern web technologies:</p>
+<ul>
+<li>Hugo as the static site generator</li>
+<li>Tailwind CSS for styling</li>
+<li>@tailwindcss/typography for enhanced typography</li>
+<li>Responsive design principles</li>
+<li>Optimized for performance</li>
+</ul>
+<p><img src="/images/theme_structure.png" alt="Theme Structure">
+<em>Clean and organized theme structure for easy customization</em></p>
+<h2 id="getting-started">Getting Started</h2>
+<p>You can install CareerCanvas in two ways:</p>
+<ol>
+<li>As a Git Submodule:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/felipecordero/careercanvas.git themes/careercanvas
+</span></span></code></pre></div><ol start="2">
+<li>As a Git Clone:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/felipecordero/careercanvas.git themes/careercanvas
+</span></span></code></pre></div><h2 id="configuration">Configuration</h2>
+<p>The theme is highly customizable through the <code>config.toml</code> file. You can configure:</p>
+<ul>
+<li>Personal information</li>
+<li>Social media links</li>
+<li>Resume/CV paths</li>
+<li>Menu structure</li>
+<li>Theme colors and styling</li>
+</ul>
+<p><img src="/images/config_example.png" alt="Configuration Example">
+<em>Example configuration showing the theme&rsquo;s flexibility</em></p>
+<h2 id="development">Development</h2>
+<p>For developers who want to customize the theme:</p>
+<ol>
+<li>Start the development server:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run dev
+</span></span></code></pre></div><ol start="2">
+<li>Build for production:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run build:css <span style="color:#f92672">&amp;&amp;</span> npm run build
+</span></span></code></pre></div><h2 id="why-careercanvas">Why CareerCanvas?</h2>
+<p>I created CareerCanvas because I wanted a theme that would:</p>
+<ol>
+<li>Showcase technical skills effectively</li>
+<li>Present professional experience in a clear timeline</li>
+<li>Provide a platform for sharing technical blog posts</li>
+<li>Look professional while being easy to customize</li>
+<li>Support multiple languages for international professionals</li>
+</ol>
+<p><img src="/images/skills_showcase.png" alt="Skills Showcase">
+<em>Interactive skills section with modern card design</em></p>
+<h2 id="future-plans">Future Plans</h2>
+<p>I&rsquo;m actively working on improving CareerCanvas with plans for:</p>
+<ul>
+<li>Additional language support</li>
+<li>More customization options</li>
+<li>Enhanced portfolio features</li>
+<li>Improved documentation</li>
+<li>Community contributions</li>
+</ul>
+<h2 id="get-involved">Get Involved</h2>
+<p>CareerCanvas is open source and available under the MIT License. I welcome contributions from the community! Whether it&rsquo;s bug reports, feature requests, or code contributions, your input helps make CareerCanvas better for everyone.</p>
+<p>Visit the <a href="https://github.com/felipecordero/careercanvas">GitHub repository</a> to:</p>
+<ul>
+<li>Star the project</li>
+<li>Report issues</li>
+<li>Submit pull requests</li>
+<li>Join the discussion</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>CareerCanvas is more than just a theme - it&rsquo;s a tool designed to help technical professionals present their work in the best possible light. Whether you&rsquo;re a software engineer, data scientist, or any other technical professional, CareerCanvas provides the perfect platform to showcase your skills and experience.</p>
+<p>Try it out today and let me know what you think!</p>
+
+        </div>
+      </div>
+
+      
+      
+      <div class="lg:w-1/4">
+        <div class="sticky top-8">
+          <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Related Content</h2>
+          <div class="space-y-4">
+            
+            
+            <article class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-sm">
+              <h3 class="text-lg font-semibold mb-2">
+                <a href="/contributions/careercanvas-hugo-theme/" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                  Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios
+                </a>
+              </h3>
+              
+              <p class="text-sm text-gray-600 dark:text-gray-300">A comprehensive guide to CareerCanvas, a modern Hugo theme designed for technical professionals. Learn about its features, installation, and how it can help showcase your professional portfolio.</p>
+              
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  hugo
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  theme
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  portfolio
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  web-development
+                </span>
+                
+              </div>
+              
+            </article>
+            
+            <article class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-sm">
+              <h3 class="text-lg font-semibold mb-2">
+                <a href="/blog/welcome-to-my-blog/" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                  Welcome to My Blog
+                </a>
+              </h3>
+              
+              <p class="text-sm text-gray-600 dark:text-gray-300">Welcome to my blog where I share my journey of creating this website using Hugo and the CareerCanvas theme, along with insights about structural engineering, software development, and AI in construction.</p>
+              
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  blog
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  welcome
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  hugo
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  web-development
+                </span>
+                
+                <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded-full text-xs">
+                  careercanvas
+                </span>
+                
+              </div>
+              
+            </article>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="bg-bg-secondary dark:bg-bg-secondary text-text-primary py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/#home" class="text-xl font-bold text-text-primary font-heading">Muhammad Sulaiman</a>
+        <p class="text-text-secondary dark:text-text-muted mt-1">Project Manager, Software Engineer.</p>
+        <p class="text-text-secondary dark:text-text-muted mt-2">Technical project manager and software developer with 7&#43; years in the IT industry. Bachelor’s degree in Computer Science and Master’s degree in AI/NLP. Experienced software architect and tech lead, open source enthusiast, curious mind, and lifelong learner who turns ideas into working code.</p>
+        <p class="text-text-secondary dark:text-text-muted mt-1">
+          <i class="fas fa-map-marker-alt mr-2"></i>Damascus, Syria
+        </p>
+        <a href="mailto:muhammad.b.sulaiman@gmail.com" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+          <i class="fas fa-envelope mr-2"></i>muhammad.b.sulaiman@gmail.com
+        </a>
+        <div class="flex space-x-8 mt-6" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://github.com/MuhammadSulaiman001" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-wrap gap-2 justify-end">
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Technical Project Management</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Software Architecture</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Team leadership</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">AI/NLP Solutions</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Technical Consulting</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">.NET Development</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Desktop &amp; Mobile Applications</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Web Applications</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+      <p>© 2025 | Muhammad Sulaiman</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    
+    
+    <script src="/js/scripts.js"></script>
+    <script src="/js/gsap-animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Muhammad Sulaiman</title>
+    <link>http://localhost:1313/tags/community/</link>
+    <description>Recent content in Community on Muhammad Sulaiman</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheduler Student Services</title>
+      <link>http://localhost:1313/contributions/scheduler_student_services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contributions/scheduler_student_services/</guid>
+      <description>&lt;h2 id=&#34;hey-there-&#34;&gt;Hey there! 👋&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the &lt;strong&gt;Welcome Team Scheduler&lt;/strong&gt; — a &lt;strong&gt;Streamlit&lt;/strong&gt; app designed to help students at &lt;strong&gt;Collège LaSalle Montréal&lt;/strong&gt; sign up to be part of the Welcome Team, assisting new students at the beginning of each semester. 🏫🎓&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-image-demo&#34;&gt;🖼️ Image Demo&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;my-8&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;img &#xD;&#xA;    src=&#34;http://localhost:1313/images/scheduler_demo_image.gif&#34; &#xD;&#xA;    alt=&#34;Scheduler Student Services Demo&#34; &#xD;&#xA;    width=&#34;auto&#34;&#xD;&#xA;    height=&#34;auto&#34;&#xD;&#xA;    class=&#34;rounded-lg shadow-md&#34;&#xD;&#xA;    loading=&#34;lazy&#34;&#xD;&#xA;  &gt;&#xD;&#xA;  &#xD;&#xA;  &#xD;&#xA;&lt;/div&gt; &#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-purpose&#34;&gt;🚀 Purpose&lt;/h2&gt;&#xA;&lt;p&gt;Starting a new semester can be overwhelming for newcomers. This app makes it easy to organize helpful student volunteers who are eager to support and guide their peers during orientation week. 🤝💬&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
