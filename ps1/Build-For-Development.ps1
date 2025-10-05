@@ -1,1 +1,1 @@
-.\dev.sh
+npm run dev

@@ -24,6 +24,3 @@ desktop.ini
 .env.*
 
 TODOs.md
-
-config.local.toml
-.vercel

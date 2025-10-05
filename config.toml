@@ -38,6 +38,11 @@ profile_image = "/images/muhammad-sulaiman-image.jpg"
 description = "32 Year old Muslim 👳🏻 Husband 🤵, Father of 2 👧🏻👦🏻. Religion first, family second.. sport, science and code = a way of life."
 author = "Mo Sulaiman"
 
+# From https://formspree.io/
+formspree_endpoint = "https://formspree.io/f/mzzvjzee" # Change to your Formspree endpoint - DONE
+# From https://www.pexels.com/api/
+pexels_api_key = "fOwxvkti2ZbBXghc4AteFC4ikDns0d7IbF9dpt89i4m4ji33CAaV4uLv"
+
 og_image = "images/muhammad-sulaiman-image.jpg"
 
 linkedin_url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6"
@@ -99,16 +104,15 @@ Content-Type = "text/css"
 [security.funcs]
 getenv = ['^HUGO_', '^CI$']
 
-
 # Dynamic Color Palettes Configuration
 # Multiple color palettes that will be randomly selected on each page load
 # Each palette contains main_color, second_color, and third_color
 [params.color_palettes]
-[[params.color_palettes.palette]]
-name = "professional"
-main_color = "#474A51"    # Graphite Gray – ultra professional, metallic, predominant
-second_color = "#E52521"  # Mario Red – subtle accent, inspired by Super Mario
-third_color = "#3CB043"   # Luigi Green – subtle accent, inspired by Luigi
+#[[params.color_palettes.palette]]
+#name = "professional"
+#main_color = "#474A51"    # Graphite Gray – ultra professional, metallic, predominant
+#second_color = "#E52521"  # Mario Red – subtle accent, inspired by Super Mario
+#third_color = "#3CB043"   # Luigi Green – subtle accent, inspired by Luigi
 
 [[params.color_palettes.palette]]
 name = "ocean"
@@ -116,11 +120,11 @@ main_color = "#1E40AF"    # Vibrant Blue – energetic and modern
 second_color = "#06B6D4"  # Cyan – fresh and innovative
 third_color = "#10B981"   # Emerald – growth and success
 
-[[params.color_palettes.palette]]
-name = "forest"
-main_color = "#059669"    # Deep Emerald – natural and stable
-second_color = "#10B981"  # Green – growth and success
-third_color = "#F59E0B"   # Golden Yellow – wisdom and clarity
+#[[params.color_palettes.palette]]
+#name = "forest"
+#main_color = "#059669"    # Deep Emerald – natural and stable
+#second_color = "#10B981"  # Green – growth and success
+#third_color = "#F59E0B"   # Golden Yellow – wisdom and clarity
 
 [[params.color_palettes.palette]]
 name = "steel"
@@ -133,13 +137,13 @@ name = "navy"
 main_color = "#1E3A8A"    # Navy Blue – authoritative and trustworthy
 second_color = "#3B82F6"  # Bright Blue – innovation and clarity
 third_color = "#F59E0B"   # Amber – excellence and achievement
-
-[[params.color_palettes.palette]]
-name = "charcoal"
-main_color = "#1F2937"    # Charcoal – sophisticated and modern
-second_color = "#EF4444"  # Red – energy and determination
-third_color = "#22C55E"   # Green – growth and stability
-
+#
+#[[params.color_palettes.palette]]
+#name = "charcoal"
+#main_color = "#1F2937"    # Charcoal – sophisticated and modern
+#second_color = "#EF4444"  # Red – energy and determination
+#third_color = "#22C55E"   # Green – growth and stability
+#
 [[params.color_palettes.palette]]
 name = "midnight"
 main_color = "#0F172A"    # Midnight Blue – deep and authoritative
@@ -154,5 +158,7 @@ third_color = "#06B6D4"   # Cyan – precision and clarity
 # Customize this list to change the types of images that appear
 # The system will randomly select from these queries for each page loads
 queries = [
-    "AI", "coding", "computer science", "programming", "machine learning", "artificial intelligence", "data science", "cybersecurity", "cloud computing", "web development", "mobile apps"
+    "hacker",
+    "programming",
+    "code",
 ]
