@@ -87,18 +87,23 @@
             <i class="fab fa-github text-xl"></i>
           </a>
           {{ end }}
+          {{ if .Site.Params.stackoverflow_url }}
+          <a href="{{ .Site.Params.stackoverflow_url }}" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-stack-overflow text-xl"></i>
+          </a>
+          {{ end }}
         </div>
         <!-- Dark Mode Toggle -->
         <button id="darkModeToggle" class="text-text-primary dark:text-text-primary focus:outline-none">
-          <i class="fas fa-toggle-on dark:hidden"></i>
-          <i class="fas fa-toggle-off hidden dark:block"></i>
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:block"></i>
         </button>
       </div>
       <div class="lg:hidden flex items-center space-x-4">
         <!-- Dark Mode Toggle Mobile -->
         <button id="darkModeToggleMobile" class="text-text-primary dark:text-text-primary focus:outline-none">
-          <i class="fas fa-toggle-on dark:hidden"></i>
-          <i class="fas fa-toggle-off hidden dark:block"></i>
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:block"></i>
         </button>
         <button id="menu-btn" class="text-text-primary dark:text-text-primary">
           <i class="fas fa-bars text-2xl"></i>
@@ -171,6 +176,9 @@
         </a>
         <a href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
           <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="{{ .Site.Params.stackoverflow_url }}" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-stack-overflow text-2xl"></i>
         </a>
       </div>
     </div>

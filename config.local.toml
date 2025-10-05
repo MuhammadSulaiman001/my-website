@@ -51,6 +51,9 @@ copyright = "© 2025 | Muhammad Sulaiman"
 resume_url_en = "/files/sulaiman-resume.pdf"
 resume_label = "View CV"
 
+formspree_endpoint = "https://formspree.io/f/mzzvjzee" # Change to your Formspree endpoint - DONE
+pexels_api_key = "fOwxvkti2ZbBXghc4AteFC4ikDns0d7IbF9dpt89i4m4ji33CAaV4uLv"
+
 [[params.social]]
 icon = "linkedin-in"
 url = "https://www.linkedin.com/in/muhammad-sulaiman-b3723ba6/"
@@ -92,6 +95,7 @@ style = "monokai"
 for = "/**/*.css"
 [server.headers.values]
 Content-Type = "text/css"
+
 
 # Security configuration for environment variables
 # Note: We now use serverless functions for secure API key handling
@@ -154,5 +158,5 @@ third_color = "#06B6D4"   # Cyan – precision and clarity
 # Customize this list to change the types of images that appear
 # The system will randomly select from these queries for each page loads
 queries = [
-    "AI", "coding", "computer science", "programming", "machine learning", "artificial intelligence", "data science", "cybersecurity", "cloud computing", "web development", "mobile apps"
+        "AI", "coding", "computer science", "programming", "machine learning", "artificial intelligence", "data science", "cybersecurity", "cloud computing", "web development", "mobile apps"
 ]
