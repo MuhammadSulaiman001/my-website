@@ -53,11 +53,6 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-      # Issue solved: You need to install PostCSS!
-      #     Why not installed in previous step?
-      - name: Install PostCSS
-        run: npm install --save-dev postcss postcss-cli
-
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
