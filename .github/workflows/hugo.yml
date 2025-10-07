@@ -54,8 +54,9 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
       # Issue solved: You need to install PostCSS!
-      - name: Add local node_modules binaries to PATH
-        run: echo "PATH=$(pwd)/node_modules/.bin:$PATH" >> $GITHUB_ENV
+      #     Why not installed in previous step?
+      - name: Install PostCSS
+        run: npm install --save-dev postcss postcss-cli
 
       - name: Build with Hugo
         env:
