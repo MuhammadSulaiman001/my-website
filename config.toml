@@ -159,6 +159,6 @@ third_color = "#06B6D4"   # Cyan – precision and clarity
 # The system will randomly select from these queries for each page loads
 queries = [
     "hacker",
-    "programming",
     "code",
+    "AI",
 ]
