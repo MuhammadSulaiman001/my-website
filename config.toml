@@ -12,7 +12,7 @@ contentDir = "content/en"
 languageName = "English"
 weight = 1
 [languages.en.params]
-tagline = "Project Manager, Software Engineer."
+tagline = "Project Manager.. Software Engineer.. AI Engineering Lead."
 hero_description = "Technical project manager and software developer with 7+ years in the IT industry. Bachelor’s degree in Computer Science and Master’s degree in AI/NLP. Experienced software architect and tech lead, open source enthusiast, curious mind, and lifelong learner who turns ideas into working code."
 hero_location = "Damascus, Syria"
 collab_tags = [
