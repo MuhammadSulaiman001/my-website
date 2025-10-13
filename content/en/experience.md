@@ -21,6 +21,19 @@ positions:
         - "Perform code reviews to uphold code quality, enforce best practices, and mentor team members."
         - "Create a wide range of documentation, including KPI reports, SOPs, visual diagrams & documentation, product roadmaps, and more."
 
+  - company: "LikeCard"
+    company_url: "https://likecard.com"
+    role: "AI Engineering Lead"
+    period: "2025 - Present (Contract)"
+    industry: "Information Technology & Services"
+    location: "Remote"
+    company_description: "Prepaid Card eCommerce Platform"
+    bullet_points:
+        - "Design and implement machine learning solutions to enhance product offerings"
+        - "Deploy AI-related features across various company projects to improve functionality"
+        - "Provide AI support to different departments, fostering collaboration and innovation"
+        - "Collaborate with cross-functional teams to integrate AI capabilities into existing projects"
+
   - company: "ControNest"
     company_url: "https://contronest.com"
     role: "Tech lead & Senior Software Developer"
