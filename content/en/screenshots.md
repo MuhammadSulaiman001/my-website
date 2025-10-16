@@ -1,5 +1,5 @@
 ---
-title: "Featured Screenshots"
+title: "Featured"
 type: "homepage"
 intro: >-
   Here are some highlights from the projects I've worked on—showcasing solutions that blend technical expertise with real-world impact.

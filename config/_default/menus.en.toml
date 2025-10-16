@@ -19,8 +19,8 @@ url = "/#technical"
 weight = 45
 
 [[main]]
-name = "Screenshots"
-url = "/#screenshots"
+name = "Featured"
+url = "/#featured"
 weight = 47
 
 [[main]]
