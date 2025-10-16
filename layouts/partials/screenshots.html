@@ -1,0 +1,71 @@
+<!-- Featured Screenshots Section -->
+<section id="screenshots" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ with .Site.GetPage "screenshots" }}
+      <!-- Section heading -->
+      <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h2>
+      <p class="text-lg text-center mb-12 text-gray-700 dark:text-text-tertiary italic">{{ .Params.intro }}</p>
+
+      <!-- Screenshots grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range $index, $screenshot := .Params.screenshots }}
+        <div class="screenshot-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary rounded-lg shadow-lg border border-border-primary dark:border-border-primary overflow-hidden card-hover" data-animate>
+          <!-- Screenshot image -->
+          <div class="screenshot-image-container relative overflow-hidden">
+            {{ if $screenshot.image }}
+              <a href="{{ $screenshot.image }}" data-fslightbox="screenshots-gallery" class="block">
+                <img src="{{ $screenshot.image }}" 
+                     alt="{{ $screenshot.title }}" 
+                     class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                     loading="lazy"
+                     onerror="this.src='/images/placeholder-screenshot.png';this.onerror=null;">
+              </a>
+            {{ else }}
+              <div class="w-full h-64 bg-gradient-primary flex items-center justify-center">
+                <i class="fas fa-image text-white text-6xl opacity-50"></i>
+              </div>
+            {{ end }}
+            
+            <!-- Overlay with project link if available -->
+            {{ if $screenshot.project_url }}
+            <div class="absolute top-4 right-4">
+              <a href="{{ $screenshot.project_url }}" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="bg-gradient-primary text-white px-3 py-2 rounded-lg shadow-lg text-sm font-medium button-hover inline-flex items-center">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                View Project
+              </a>
+            </div>
+            {{ end }}
+          </div>
+          
+          <!-- Screenshot details -->
+          <div class="p-6">
+            <!-- Title -->
+            <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-3">
+              {{ $screenshot.title }}
+            </h3>
+            
+            <!-- Description -->
+            <p class="text-gray-700 dark:text-text-secondary mb-4 leading-relaxed">
+              {{ $screenshot.description }}
+            </p>
+            
+            <!-- Tags -->
+            {{ if $screenshot.tags }}
+            <div class="flex flex-wrap gap-2">
+              {{ range $screenshot.tags }}
+              <span class="inline-flex items-center px-3 py-1 bg-gradient-primary text-white text-xs font-medium rounded-full">
+                {{ . }}
+              </span>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
