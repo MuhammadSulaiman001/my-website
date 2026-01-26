@@ -4,7 +4,7 @@ type: "homepage"
 intro: >-
   With software engineering & project management skills, I bring it home like a champion.
 
-resume_url_en: "/files/sulaiman-resume.pdf"
+resume_url_en: "/files/my-resume.pdf"
 resume_label: "Download Resume"
 
 positions:
@@ -19,7 +19,7 @@ positions:
       - "Perform EDA on large SQL data sources and curate high-quality training datasets through cleaning and feature engineering."
       - "Train ML models and integrate them directly into FastAPI endpoints for real-time inference in production."
       - "Use AWS SageMaker to support model training and experimentation alongside local and custom ML pipelines."
-      - "Design and expose ML models as FastAPI-based APIs and microservices for integration with product and engineering systems."
+      - "Improved prediction model accuracy by 8% through targeted feature engineering and iterative model fine-tuning."
       - "Develop an internal dashboard for API key management and monitoring for AI services."
       - "Implement and operate production MLOps pipelines, including CI/CD, Docker, monitoring, and automated retraining."
       - "Use advanced ML frameworks (scikit-learn, XGBoost, LightGBM, CatBoost) to deliver high-performing production models."
@@ -45,7 +45,8 @@ positions:
     company_description: "Elevate equities through unique investment opportunities"
     bullet_points:
       - "Lead cross-functional project teams (web & mobile developers, UI/UX & QA), define technical objectives, assign tasks, and monitor progress to ensure timely delivery of high-quality software solutions."
-      - "Manage DevOps pipelines for Flutter apps using tools such as Bitrise and GitHub Actions to automate building and deployment processes."
+      - "Manage DevOps pipelines using tools such as Bitrise and GitHub Actions to automate building and deployment processes."
+      - "Developed mobile SDK for custom payment method, enabling seamless integration with partner apps."
       - "Perform code reviews to uphold code quality, enforce best practices, and mentor team members."
       - "Create a wide range of documentation, including KPI reports, SOPs, visual diagrams & documentation, product roadmaps, and more."
 
@@ -85,5 +86,5 @@ positions:
       - "Developed shopping and e-commerce apps, integrating Hyperpaypayment gateway and OAuth-based identity providers."
       - "Implemented UI/UX designs with precision."
       - "Developed ERP Android applications (tablets only)."
-      - "Developed an Android auction application featuring live-streamauctions."
+      - "Developed an Android auction application featuring live-stream auctions."
 ---

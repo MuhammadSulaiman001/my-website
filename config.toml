@@ -54,7 +54,7 @@ stackoverflow_url = "https://stackoverflow.com/users/4108016/muhammad-sulaiman"
 
 copyright = "© 2025 | Muhammad Sulaiman"
 
-resume_url_en = "/files/sulaiman-resume.pdf"
+resume_url_en = "/files/my-resume.pdf"
 resume_label = "View CV"
 
 [[params.social]]
