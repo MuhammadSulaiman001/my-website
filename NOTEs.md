@@ -1,12 +1,5 @@
 # How-To
 
-## Coming soon theme:
-
-1. Make your edits, test locally with `hugo server -D` (it will make baseURL `localhost:1313`)
-2. Ready to publish? build the website with `hugo build` (this will return back the baseURL to `muhammad-sulaiman.com`),
-   commit && push
-3. DONE.
-
 ## CareerCanvas theme
 
 1. In dev, use `npm run dev`
@@ -27,6 +20,14 @@
             - If there are no changes, then we're done.
             - If there are changes, then copy those changes to my-website manually, build locally to check the changes,
               make your edits, satisfied? build for production, commit and push.
+
+
+## Coming soon theme:
+
+1. Make your edits, test locally with `hugo server -D` (it will make baseURL `localhost:1313`)
+2. Ready to publish? build the website with `hugo build` (this will return back the baseURL to `muhammad-sulaiman.com`),
+   commit && push
+3. DONE.
 
 # Notes:
 
