@@ -136,5 +136,4 @@ technical_groups:
         name: "Design patterns"
       - icon: "fa-solid fa-folder-open"
         name: "Read the documentation!"
-
 --- 
