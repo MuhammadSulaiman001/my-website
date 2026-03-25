@@ -2,7 +2,7 @@
 title: "Skills"
 type: "homepage"
 intro: >-
-  Combining 8+ years of software development expertise with project management skills, CS graduate, Master’s degree in AI/NLP.
+  Combining 9+ years of software development expertise with project management skills, CS graduate, Master’s degree in AI/NLP.
 
 domains:
   - icon: "code"

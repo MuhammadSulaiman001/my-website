@@ -3,7 +3,7 @@ title: "About"
 type: "homepage"
 featured_image: "/images/muhammad-sulaiman-image.jpg"
 intro: >-
-  Hi! I'm Muhammad Sulaiman, **AI Engineering Lead** 🧑🏿‍💻 and **Project manager** 💻 with **8+ years** in IT industry, holding a master degree in **AI/NLP** 🤖. I started working as Android applications developer at 2018, then as Windows applications developer at 2019, then as a tech lead and a project manager at 2024, Currently, I am working as AI Engineering Lead at LikeCard. I combine software engineering with AI and project management skills to solve complex problems in IT industry.
+  Hi! I'm Muhammad Sulaiman, **AI Engineering Lead** 🧑🏿‍💻 and **Project manager** 💻 with **9+ years** in IT industry, holding a master degree in **AI/NLP** 🤖. I started working as Android applications developer at 2018, then as Windows applications developer at 2019, then as a tech lead and a project manager at 2024, Currently, I am working as AI Engineering Lead at LikeCard. I combine software engineering with AI and project management skills to solve complex problems in IT industry.
 
 study: >-
   Currently based in **Damascus** sy, I graduated in 2017, Bachelor degree in computer science from **Damascus University**, Department of **Artificial Intelligence and Nautral Language Processing** 🤖 where I worked a lot with **Python** 🐍, **Jupyter Notebooks**, and **predictive modeling** 📊. I got my Master's degree in AI/NLP in 2024, most of my work is in AI applications in Medical & Educational domain. I enjoy turning complex data into meaningful solutions, working at the crossroads of AI, engineering, and domain knowledge to make a tangible difference.
