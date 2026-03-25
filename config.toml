@@ -13,7 +13,7 @@ languageName = "English"
 weight = 1
 [languages.en.params]
 tagline = "AI Engineering Lead.. Project Manager.. Software Engineer."
-hero_description = "AI Engineering Lead, Technical project manager and software developer with 8+ years in the IT industry. Bachelor’s degree in Computer Science and Master’s degree in AI/NLP. Experienced software architect and tech lead, open source enthusiast, curious mind, and lifelong learner who turns ideas into working code."
+hero_description = "AI Engineering Lead holding a Master’s degree in Artificial Intelligence with 9+ years of experience building scalable software systems and production ML pipelines. Experienced in backend, desktop and mobile apps development, DevOps, MLOps, and leading cross-functional teams. Passionate about clean architecture, open-source, agile methodologies, and translating ideas into real-world production systems."
 hero_location = "Damascus, Syria"
 collab_tags = [
     "AI & Machine Learning",
