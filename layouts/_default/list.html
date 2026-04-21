@@ -1,13 +1,17 @@
 {{ define "main" }}
 <section class="py-28 bg-white dark:bg-gray-800">
   <div class="w-full lg:w-xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ $pages := .Pages.ByWeight }}
+    {{ if eq .Type "blog" }}
+    {{ $pages = .Pages.ByDate.Reverse }}
+    {{ end }}
     <h1 class="text-4xl font-bold mb-8 font-heading text-center text-gray-900 dark:text-white">{{ .Title }}</h1>
     <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray mb-12">
       {{ .Content }}
     </div>
 
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-      {{ range .Pages.ByWeight }}
+      {{ range $pages }}
       <a href="{{ .RelPermalink }}" class="block">
         <article class="bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:shadow-md hover:-translate-y-1 h-full">
           {{ if .Params.featured_image }}

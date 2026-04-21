@@ -1,9 +1,16 @@
 {{ define "main" }}
 <section class="py-28 bg-white dark:bg-gray-800">
   <div class="w-full lg:w-xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ $related := .Site.RegularPages.Related . | first 10 }}
+    {{ if eq .Type "blog" }}
+    {{ $related = where $related "Type" "blog" }}
+    {{ if eq (len $related) 0 }}
+    {{ $related = first 10 (where (where .Site.RegularPages "Type" "blog") "RelPermalink" "ne" .RelPermalink) }}
+    {{ end }}
+    {{ end }}
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Main Content -->
-      <div class="{{ if and .Params.tags (or (eq .Type "engineering") (eq .Type "contributions") (eq .Type "blog")) }}lg:w-3/4{{ else }}w-full{{ end }}">
+      <div class="{{ if or (and .Params.tags (or (eq .Type "engineering") (eq .Type "contributions"))) (and (eq .Type "blog") (gt (len $related) 0)) }}lg:w-3/4{{ else }}w-full{{ end }}">
         <h1 class="text-4xl font-bold mb-2 font-heading text-center text-gray-900 dark:text-white">{{ .Title }}</h1>
         {{ if eq .Type "blog" }}
         <div class="text-center text-gray-600 dark:text-gray-400 mb-8">
@@ -17,13 +24,12 @@
         </div>
       </div>
 
-      {{ if and .Params.tags (or (eq .Type "engineering") (eq .Type "contributions") (eq .Type "blog")) }}
+      {{ if or (and .Params.tags (or (eq .Type "engineering") (eq .Type "contributions"))) (and (eq .Type "blog") (gt (len $related) 0)) }}
       <!-- Sidebar with Related Content -->
       <div class="lg:w-1/4">
         <div class="sticky top-8">
           <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Related Content</h2>
           <div class="space-y-4">
-            {{ $related := .Site.RegularPages.Related . | first 10 }}
             {{ range $related }}
             <article class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-sm">
               <h3 class="text-lg font-semibold mb-2">
